@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading… · Lumen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-detail">
+
+  <div class="bg-canvas">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="index.html#top" class="nav__brand">
+      <span class="nav__logo">✦</span>
+      <span class="nav__name">Lumen</span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html#timeline">Timeline</a>
+      <a href="index.html#philosophers">Thinkers</a>
+      <a href="index.html#about">About</a>
+    </nav>
+    <div class="nav__actions">
+      <div class="mode-toggle" role="tablist" aria-label="Reading level">
+        <button class="mode-toggle__btn is-active" data-mode="kid" role="tab" aria-selected="true">For Kids</button>
+        <button class="mode-toggle__btn" data-mode="adult" role="tab" aria-selected="false">For Adults</button>
+        <span class="mode-toggle__pill" aria-hidden="true"></span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <article class="phil" id="phil">
+    <!-- Hero -->
+    <header class="phil__hero">
+      <a href="index.html#timeline" class="phil__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span>Back to timeline</span>
+      </a>
+
+      <div class="phil__heroInner">
+        <div class="phil__portrait" id="philPortrait"></div>
+        <div class="phil__heroText">
+          <span class="phil__era" id="philEra"></span>
+          <span class="phil__emoji" id="philEmoji"></span>
+          <h1 class="phil__name" id="philName"></h1>
+          <p class="phil__title" id="philTitle"></p>
+          <div class="phil__meta" id="philMeta"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hook -->
+    <div class="phil__hook" id="philHook"></div>
+
+    <!-- Body -->
+    <div class="phil__body">
+      <!-- Lede / quick read -->
+      <section class="phil__block phil__lede">
+        <p class="phil__ledeText" id="philLede"></p>
+      </section>
+
+      <!-- Origin -->
+      <section class="phil__block">
+        <header class="phil__blockHead">
+          <span class="phil__blockNum">01</span>
+          <h2 class="phil__blockTitle">What led them to that thought</h2>
+        </header>
+        <div class="phil__blockText" id="philOrigin"></div>
+      </section>
+
+      <!-- Core ideas -->
+      <section class="phil__block">
+        <header class="phil__blockHead">
+          <span class="phil__blockNum">02</span>
+          <h2 class="phil__blockTitle">The big ideas</h2>
+        </header>
+        <div class="phil__blockText" id="philCore"></div>
+      </section>
+
+      <!-- Quotes -->
+      <section class="phil__block">
+        <header class="phil__blockHead">
+          <span class="phil__blockNum">03</span>
+          <h2 class="phil__blockTitle">Words worth knowing</h2>
+        </header>
+        <ul class="phil__quotes" id="philQuotes"></ul>
+      </section>
+
+      <!-- Reaction -->
+      <section class="phil__block">
+        <header class="phil__blockHead">
+          <span class="phil__blockNum">04</span>
+          <h2 class="phil__blockTitle">How the world reacted</h2>
+        </header>
+        <div class="phil__blockText" id="philReaction"></div>
+      </section>
+
+      <!-- Modern impact -->
+      <section class="phil__block phil__block--accent">
+        <header class="phil__blockHead">
+          <span class="phil__blockNum">05</span>
+          <h2 class="phil__blockTitle">How they shape today's world</h2>
+        </header>
+        <div class="phil__blockText" id="philModern"></div>
+      </section>
+
+      <!-- Key works -->
+      <section class="phil__block phil__works" id="philWorksWrap">
+        <header class="phil__blockHead">
+          <span class="phil__blockNum">06</span>
+          <h2 class="phil__blockTitle">Key works to read</h2>
+        </header>
+        <ul class="phil__worksList" id="philWorks"></ul>
+      </section>
+    </div>
+
+    <!-- Prev / Next nav -->
+    <nav class="phil__nav">
+      <a href="#" id="philPrev" class="phil__navItem phil__navItem--prev">
+        <span class="phil__navMeta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Previous in time
+        </span>
+        <span class="phil__navName" id="philPrevName"></span>
+        <span class="phil__navYear" id="philPrevYear"></span>
+      </a>
+      <a href="#" id="philNext" class="phil__navItem phil__navItem--next">
+        <span class="phil__navMeta">
+          Next in time
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+        <span class="phil__navName" id="philNextName"></span>
+        <span class="phil__navYear" id="philNextYear"></span>
+      </a>
+    </nav>
+  </article>
+
+  <footer class="foot">
+    <div class="foot__inner">
+      <div class="foot__brand">
+        <span class="nav__logo">✦</span>
+        <span>Lumen</span>
+      </div>
+      <p>Made with care · A celebration of human thought</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="philosopher.js"></script>
+</body>
+</html>

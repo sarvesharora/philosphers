@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen · A Journey Through Philosophy</title>
+  <meta name="description" content="An interactive vertical timeline of the world's greatest philosophers — their origins, teachings, the world's reactions, and modern impact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-canvas">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="index.html#top" class="nav__brand">
+      <span class="nav__logo">✦</span>
+      <span class="nav__name">Lumen</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#timeline">Timeline</a>
+      <a href="#philosophers">Thinkers</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="nav__actions">
+      <div class="mode-toggle" role="tablist" aria-label="Reading level">
+        <button class="mode-toggle__btn is-active" data-mode="kid" role="tab" aria-selected="true">For Kids</button>
+        <button class="mode-toggle__btn" data-mode="adult" role="tab" aria-selected="false">For Adults</button>
+        <span class="mode-toggle__pill" aria-hidden="true"></span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <span class="hero__eyebrow">A journey through 2,500 years of human thought</span>
+      <h1 class="hero__title">
+        The minds that<br/>
+        <span class="hero__title-grad">shaped how we see</span><br/>
+        the world.
+      </h1>
+      <p class="hero__lede">
+        From a barefoot teacher in Athens to a poet whirling in Persia, from a lens-grinder in Amsterdam to a chain-smoking existentialist in Paris — twenty-five voices that asked the questions we're still answering today. Explained simply for kids, deeply for adults.
+      </p>
+      <div class="hero__cta">
+        <a href="#timeline" class="btn btn--primary">
+          <span>Begin the journey</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#philosophers" class="btn btn--ghost">Meet the thinkers</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><div class="stat__num" data-count="25">0</div><div class="stat__label">Philosophers</div></div>
+        <div class="stat"><div class="stat__num" data-count="2500">0</div><div class="stat__label">Years covered</div></div>
+        <div class="stat"><div class="stat__num" data-count="9">0</div><div class="stat__label">Civilizations</div></div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- Vertical Timeline -->
+  <section class="section section--timeline" id="timeline">
+    <div class="section__head">
+      <span class="section__kicker">01 — Timeline</span>
+      <h2 class="section__title">Twenty-five centuries, <em>one continuing conversation.</em></h2>
+      <p class="section__sub">Each marker is a thinker. The line down the middle is the river of human thought. Click any name to step into their world.</p>
+    </div>
+
+    <div class="vtimeline" id="vtimeline">
+      <div class="vtimeline__line"></div>
+      <div class="vtimeline__items" id="vtimelineItems"></div>
+    </div>
+
+    <div class="era-legend">
+      <span class="era-legend__item"><span class="era-legend__dot" style="background:#6366f1"></span>Ancient East</span>
+      <span class="era-legend__item"><span class="era-legend__dot" style="background:#0ea5e9"></span>Classical Greece</span>
+      <span class="era-legend__item"><span class="era-legend__dot" style="background:#9333ea"></span>Medieval</span>
+      <span class="era-legend__item"><span class="era-legend__dot" style="background:#3b82f6"></span>Early Modern</span>
+      <span class="era-legend__item"><span class="era-legend__dot" style="background:#dc2626"></span>19th Century</span>
+      <span class="era-legend__item"><span class="era-legend__dot" style="background:#334155"></span>20th Century</span>
+    </div>
+  </section>
+
+  <!-- Philosophers grid -->
+  <section class="section" id="philosophers">
+    <div class="section__head">
+      <span class="section__kicker">02 — The Thinkers</span>
+      <h2 class="section__title">Twenty-five minds. <em>One question.</em></h2>
+      <p class="section__sub">"How should we live?" — every one of them tried to answer. Tap any card to open their full story.</p>
+    </div>
+
+    <div class="cards" id="cardsGrid"></div>
+  </section>
+
+  <!-- About -->
+  <section class="section section--about" id="about">
+    <div class="about">
+      <span class="section__kicker">03 — About</span>
+      <h2 class="about__title">Philosophy isn't dusty.<br/><em>It's the operating system of being human.</em></h2>
+      <p class="about__text">
+        Every choice you make — whether to forgive, to chase a dream, to be honest — sits on top of questions these thinkers spent lifetimes asking. <strong>Lumen</strong> is built so anyone, from a curious kid to a seasoned reader, can step into that conversation. Inspired by Jostein Gaarder's <em>Sophie's World</em>.
+      </p>
+      <div class="about__pills">
+        <span class="pill">Ancient Wisdom</span>
+        <span class="pill">Modern Design</span>
+        <span class="pill">For Everyone</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot__inner">
+      <div class="foot__brand">
+        <span class="nav__logo">✦</span>
+        <span>Lumen</span>
+      </div>
+      <p>Made with care · A celebration of human thought</p>
+      <p class="foot__small">Portraits via Wikimedia Commons · Quotes are widely attributed; translations vary.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
