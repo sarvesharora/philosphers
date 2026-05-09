@@ -1074,5 +1074,48 @@ var philosophers = [
       `Her ethical insistence that authentic freedom requires willing the freedom of others is a powerful corrective to a culture of pure self-optimization. You cannot, on her view, be fully free while standing on the necks of others. This idea anchors many modern arguments about social justice, allyship, and ethical leadership.`,
       `Most personally, Beauvoir offers women — and anyone treated by society as "the Other" — a stubborn message: you are not the role you were assigned. Your life is yours to make. The work of unlearning the smaller self you were trained into is hard, lifelong, and absolutely worth doing. Her own life, lived loudly and on her own terms, is its own argument that it can be done.`
     ]
+  },
+  {
+    id: 'schopenhauer',
+    name: 'Arthur Schopenhauer',
+    title: 'The Philosopher of the Restless Will',
+    era: '19th Century',
+    born: 1788,
+    died: 1860,
+    birthPlace: 'Danzig (modern Gdańsk, Poland)',
+    emoji: '🌑',
+    color: '#475569',
+    portrait: 'images/schopenhauer.jpg',
+    keyWorks: ['The World as Will and Representation', 'On the Fourfold Root of the Principle of Sufficient Reason', 'Parerga and Paralipomena', 'On the Basis of Morality'],
+    hook: `A grumpy German with a poodle, a pistol by his bed, and a portrait of Kant on his wall sits down to write a book arguing that the entire universe is one blind, hungry urge — and that the only sane response is to recognize it, pity each other, and lose ourselves in music.`,
+    kid: `Schopenhauer thought life felt restless because something deep inside us is always wanting more — food, love, fame, the next thing. The moment we get it, we want something else. He didn't say this to make us sad. He said it because if we see this clearly, we can stop fighting each other so much, listen to beautiful music, and be kinder to animals and to people who are hurting.`,
+    adult: `Arthur Schopenhauer is the great pessimist of Western philosophy, but his pessimism is more careful than his reputation suggests. Building on Kant, he argued that behind the world we perceive lies a single, blind striving he called Will. Human suffering, he said, is not a glitch — it is the structure of a being made of endless wanting. His response was not despair but compassion, art, and a quiet renunciation of egoism. He shaped Nietzsche, Wagner, Freud, Tolstoy, and a century of thinkers about the unconscious.`,
+    origin: [
+      `Arthur Schopenhauer was born in 1788 in Danzig to a wealthy merchant father and a glittering, socially ambitious mother who later became a popular novelist. His father wanted him to take over the family business and dragged the boy across Europe to prepare him for it. Arthur saw a great deal of human misery on those travels — galley slaves, hospitals, slums — and never quite shook the impression.`,
+      `When his father died, almost certainly by suicide, the inheritance freed Arthur to abandon trade and study philosophy. He earned his doctorate in 1813 with a dissertation on the principle of sufficient reason, then settled in Weimar near his famous mother. Their relationship was poisonous; she eventually threw him down a staircase and refused to see him again. He carried that wound, and a sharp distrust of women, for the rest of his life.`,
+      `In 1818 he published The World as Will and Representation, the book he believed would change philosophy. Almost no one read it. He took a teaching post in Berlin and arrogantly scheduled his lectures at the same hour as the celebrated Hegel, expecting to humiliate him. The students all went to Hegel. Schopenhauer retreated to Frankfurt, where he lived alone with a series of poodles, all named Atma, and waited. Recognition finally arrived in his sixties, and the last decade of his life was spent receiving the admiration he had craved for forty years.`
+    ],
+    coreIdeas: [
+      `Schopenhauer accepted Kant's distinction between the world as it appears and the world as it is in itself, but then made a daring move: he claimed we have one privileged glimpse of the thing in itself — our own bodies, felt from the inside as striving, hunger, desire. That inner restlessness, he argued, is the same force that drives every animal, every plant pushing toward the light, every gust of wind. He called it the Will, and he believed the entire world is its expression.`,
+      `Because the Will is endless wanting, life is mostly suffering punctuated by brief satisfactions that immediately become boredom. We are like a pendulum swinging between pain and tedium. This is not a moral complaint about modern life; for Schopenhauer it is the nature of being a creature made of cravings. His honesty here is bracing rather than gloomy — he simply refused to pretend.`,
+      `His way out is threefold. First, compassion: once you realize the same Will is striving in everyone and everything, hurting another being is a kind of self-laceration. Second, art, especially music, which lets us briefly forget our own striving and contemplate the world without wanting anything from it. Third, the deeper renunciation practiced by saints and ascetics, who quiet the Will itself. He was the first major Western thinker to take Hindu and Buddhist ideas seriously as philosophy rather than exotica.`
+    ],
+    teachings: [
+      `Talent hits a target no one else can hit; genius hits a target no one else can see.`,
+      `Compassion is the basis of morality.`,
+      `Music expresses what cannot be said and on which it is impossible to be silent.`,
+      `A man can do what he wills, but he cannot will what he wills.`,
+      `The two enemies of human happiness are pain and boredom.`
+    ],
+    reaction: [
+      `For three decades, Schopenhauer was almost completely ignored. Hegel's grand optimistic system dominated German universities, and Arthur's lonely, tragic vision had no place in it. He grew bitter, sharpened his prose into a weapon, and kept revising his masterpiece for an audience that did not yet exist.`,
+      `Then, in the 1850s, a collection of his essays called Parerga and Paralipomena unexpectedly caught fire. Readers exhausted by failed revolutions and industrial misery found his honest pessimism strangely consoling. Lectures on him sprang up across Europe. By the time he died in 1860, sitting up on his sofa with a clear mind, he had become the most talked-about philosopher in Germany.`,
+      `His afterlife was even larger. The young Nietzsche read him as a thunderbolt and began philosophy from there, even when he later turned against him. Wagner set his metaphysics of music to music. Tolstoy, Freud, Proust, Mann, Hardy, Borges, and Beckett all carry his fingerprints. Without him, modern thinking about the unconscious, about desire, and about art looks unimaginable.`
+    ],
+    modern: [
+      `Whenever you hear that we are driven by drives we did not choose, that the conscious self is a thin film over a churning depth, or that wanting is itself the engine of unhappiness, you are hearing Schopenhauer through later mouthpieces. Freud's id, evolutionary psychology's blind imperatives, and the Buddhist-flavored mindfulness teachings now common in therapy all share his shape.`,
+      `His ethics of compassion, grounded in the felt unity of all suffering creatures, anticipates modern animal rights and much of contemporary environmental ethics. Long before it was fashionable, he insisted that cruelty to animals is a serious moral wrong, not a minor offense against good taste. Many today who care about the suffering of nonhuman beings are walking on ground he helped clear.`,
+      `Most personally, Schopenhauer offers an unfashionable gift: permission to find life genuinely difficult without feeling defective. You are not failing at happiness — you are a creature whose nature includes restlessness. Once you stop being surprised by that, he says, you can be gentler with yourself and with others, lose yourself in music, read a great book, walk your dog, and find that the quiet moments between the wanting are more than enough.`
+    ]
   }
 ];
